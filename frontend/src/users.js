@@ -17,7 +17,7 @@ export default function Users() {
 
 
   const fetchUsers = async () => {
-    axios.get(`http://localhost:3001/api/users`) //axios returns a promise, so it can be access by then and catch
+    axios.get(`http://localhost:4000/api/users`) //axios returns a promise, so it can be access by then and catch
       .then((response) => {
         console.log(response.data); //we assign this response to setUsers 
         setUsers(response.data);
@@ -34,7 +34,7 @@ export default function Users() {
       id: data.id,
       name: data.name,//we can get id and name in the payload by using the retrieved data after click button in the userform
   }
-    axios.post(`http://localhost:3001/api/createuser`, payload) //we need to include url and the payload here as parameters
+    axios.post(`http://localhost:4000/api/createuser`, payload) //we need to include url and the payload here as parameters
       .then(() => {
         fetchUsers(); //call the fetchUsers function to get the newly updated data, otherwise you need to reload the page
        /*  setSubmitted(false); After submitted, form is reset  */
@@ -52,7 +52,7 @@ export default function Users() {
       id: data.id,
       name: data.name,
     }
-    axios.post(`http://localhost:3001/api/updateuser`, payload) 
+    axios.post(`http://localhost:4000/api/updateuser`, payload) 
       .then(() => {
         fetchUsers();
         //setSubmitted(false);
@@ -65,7 +65,7 @@ export default function Users() {
   
 
   const deleteUser = (data) => {
-    axios.post(`http://localhost:3001/api/deleteuser`, data)
+    axios.post(`http://localhost:4000/api/deleteuser`, data)
       .then(() => {
        // console.log(response.data);
         fetchUsers(); //call the fetchUsers function to get the newly updated data in usertable

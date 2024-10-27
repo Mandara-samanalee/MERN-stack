@@ -3,7 +3,7 @@ const app = express(); //here app is the instance of express
 const cors = require('cors'); //import cors
 const router = require('./router') //import router
 
-const port = 3001;
+const port = 4000;
 const host = '127.0.0.1'
 const mongoose = require('mongoose'); //import mongoose
 const dotenv = require('dotenv'); //import dotenv
