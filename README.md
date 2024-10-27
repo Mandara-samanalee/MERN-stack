@@ -33,9 +33,7 @@ This repository contains a simple User Management application built with the MER
 ### 1. Clone the Repository
    ```bash
    git clone <repository-url>
-   ```
-   Navigate into the project directory:
-   
+   ``` 
 
 ### 2. Backend (Node.js + Express)
 1. Navigate to the `backend` directory:
