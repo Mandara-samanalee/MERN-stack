@@ -6,7 +6,7 @@ const router = require('./router') //import router
 const port = 3001;
 const host = '127.0.0.1'
 const mongoose = require('mongoose'); //import mongoose
-const dotenv = require('dotenv');
+const dotenv = require('dotenv'); //import dotenv
 dotenv.config();
 
 app.use(cors());
