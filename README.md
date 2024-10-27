@@ -1,3 +1,4 @@
+
 # User Management System
 
 This repository contains a simple User Management application built with the MERN stack: MongoDB, Express, React, and Node.js. The application allows you to add, view, update, and delete user records.
@@ -37,7 +38,7 @@ This repository contains a simple User Management application built with the MER
 
 ### 2. Backend (Node.js + Express)
 1. Navigate to the `backend` directory:
-  
+ 
 2. Install dependencies:
    ```bash
    npm install
@@ -48,9 +49,22 @@ This repository contains a simple User Management application built with the MER
      MONGO_URI=your_mongodb_connection_string
      ```
 4. Start the backend server:
-   ```bash
-   npm start
-   ```
+   You can run the backend server using one of the following methods:
+
+   - **Using `npm start`**:
+     ```bash
+     npm start
+     ```
+
+   - **Using `nodemon`** (for automatic server reloads on file changes):
+     - Install `nodemon` globally if you haven't:
+       ```bash
+       npm install -g nodemon
+       ```
+     - Start the server with `nodemon`:
+       ```bash
+       nodemon server.js
+       ```
 
 ### 3. Frontend (React)
 1. Navigate to the `frontend` directory:
@@ -76,4 +90,3 @@ Open your browser and go to [http://localhost:3000](http://localhost:3000) to ac
 ## License
 
 This project is licensed under the MIT License.
-
